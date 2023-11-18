@@ -1,8 +1,5 @@
 package org.example.controller;
 
-import javafx.application.Platform;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -14,11 +11,8 @@ import javafx.util.Duration;
 import org.example.mp3.Mp3Parser;
 import org.example.mp3.Mp3Song;
 import org.example.player.Mp3Player;
-import org.farng.mp3.MP3File;
-import org.farng.mp3.TagException;
 
 import java.io.File;
-import java.io.IOException;
 
 public class MainController {
     @FXML
@@ -130,6 +124,7 @@ public class MainController {
         MenuItem openFile = menuPaneController.getFileMenuItem();
         MenuItem openDir = menuPaneController.getDirMenuItem();
         MenuItem close = menuPaneController.getCloseMenuItem();
+        MenuItem toTui = menuPaneController.getToTuiMenuItem();
 
         openFile.setOnAction(actionEvent -> {
             FileChooser fileChooser = new FileChooser();

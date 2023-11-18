@@ -23,6 +23,9 @@ public class MenuPaneController {
     private MenuItem dirMenuItem;
 
     @FXML
+    private MenuItem toTuiMenuItem;
+
+    @FXML
     private MenuItem fileMenuItem;
 
     public void initialize(){
@@ -44,6 +47,10 @@ public class MenuPaneController {
 
     public MenuItem getFileMenuItem() {
         return fileMenuItem;
+    }
+
+    public MenuItem getToTuiMenuItem() {
+        return toTuiMenuItem;
     }
 
     public void configureMenu(){
